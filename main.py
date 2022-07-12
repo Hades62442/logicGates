@@ -11,10 +11,10 @@ def NOT(a):
     return (not a)
 
 def NAND(a,b):
-    return not (a and b)
+    return not (AND(a,b))
 
 def NOR(a,b):
-    return not (a or b)
+    return not (OR(a,b))
 
 def XNOR(a,b):
     return (a == b)
