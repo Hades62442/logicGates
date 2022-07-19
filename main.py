@@ -20,16 +20,17 @@ def XNOR(a,b):
     return (a == b)
 
 
-def test(a,b):
-    print(f"{AND(a,b)}\t{OR(a,b)}\t{XOR(a,b)}\t{NAND(a,b)}\t{NOR(a,b)}\t{XNOR(a,b)}")
+def test():
+    print(f"Input A\tInput B\tAND\tOR\tXOR\tNAND\tNOR\tXNOR")
+    a = False
+    b = False
+    print(f"{a}\t{b}\t{AND(a,b)}\t{OR(a,b)}\t{XOR(a,b)}\t{NAND(a,b)}\t{NOR(a,b)}\t{XNOR(a,b)}")
+    b = True
+    print(f"{a}\t{b}\t{AND(a,b)}\t{OR(a,b)}\t{XOR(a,b)}\t{NAND(a,b)}\t{NOR(a,b)}\t{XNOR(a,b)}")
+    a = True
+    b = False
+    print(f"{a}\t{b}\t{AND(a,b)}\t{OR(a,b)}\t{XOR(a,b)}\t{NAND(a,b)}\t{NOR(a,b)}\t{XNOR(a,b)}")
+    b = True
+    print(f"{a}\t{b}\t{AND(a,b)}\t{OR(a,b)}\t{XOR(a,b)}\t{NAND(a,b)}\t{NOR(a,b)}\t{XNOR(a,b)}")
 
-a = False
-b = False
-test(a,b)
-b = True
-test(a,b)
-a = True
-b = False
-test(a,b)
-b = True
-test(a,b)
+test()
